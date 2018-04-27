@@ -13,14 +13,19 @@ var budgetController = (function() {
         this.value = value;
     };
     
-})();
+    var data = {
+        allItems: {
+            Exp = [],
+            Inc = []
+        }
 
-
-  var Expense = function(id, description, value) {
-        this.id = id;
-        this.description = description;
-        this.value = value;
+        total: {
+            Exp: 0,
+            Inc: 0
+        }
     };
+    
+})();
 
 // UI CONTROLLER
 var UIController = (function(){
